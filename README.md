@@ -18,18 +18,18 @@ This IoT-based data logger monitors temperature and humidity using a DHT11 senso
 3) Flash Magic
 4) 
     
-🔑 Key Features:
+🔑 KEY FEATURES:
 * Real-time environmental monitoring
 * EEPROM-based persistent storage of threshold values
 * Alerts using buzzer on threshold violation
 * Cloud integration with Thingspeak for data logging
 * Remote configuration via cloud and local keypad
 
-🏗️ System Architecture:
+🏗️ SYSTEM ARCHITECTURE:
 ![image](https://github.com/user-attachments/assets/1e87a544-a785-4994-8fde-678fbaca284c)
 
 
-🔁 Working principle:
+🔁 WORKING PRINCIPLE:
   The system initializes all peripherals (LCD, DHT11, EEPROM, ESP01, keypad, and buzzer).
 * Setpoints are read from EEPROM during startup.
 * The DHT11 sensor continuously measures temperature and humidity.
