@@ -23,7 +23,17 @@ This IoT-based data logger monitors temperature and humidity using a DHT11 senso
 * Alerts using buzzer on threshold violation
 * Cloud integration with Thingspeak for data logging
 * Remote configuration via cloud and local keypad
-* Interrupt-driven user input system 
+* Interrupt-driven user input system
+
+🧩 System Architecture:
+
+[ Sensors ] --> [ Microcontroller ] --> [ Cloud / Local DB ]
+                                 ↘
+                            [ Threshold Checker ]
+                                 ↘
+                             [ Alert System ]
+                                 ↘
+                           [ Dashboard / Logs ]  
 
 🔁 Working principle:
   The system initializes all peripherals (LCD, DHT11, EEPROM, ESP01, keypad, and buzzer).
