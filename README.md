@@ -23,9 +23,7 @@ This IoT-based data logger monitors temperature and humidity using a DHT11 senso
 * EEPROM-based persistent storage of threshold values
 * Alerts using buzzer on threshold violation
 * Cloud integration with Thingspeak for data logging
-* Remote configuration via cloud and local keypad![image](https://github.com/user-attachments/assets/c86dbea2-b438-47df-a985-472829f9f01f)
-
-* Interrupt-driven user input system
+* Remote configuration via cloud and local keypad
 
 🏗️ System Architecture:
 ![image](https://github.com/user-attachments/assets/1e87a544-a785-4994-8fde-678fbaca284c)
