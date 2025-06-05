@@ -1,7 +1,7 @@
 # IOT-DATA-LOGGER-WITH-THRESHOLD-VIOLATION-DETECTION
 This IoT-based data logger monitors temperature and humidity using a DHT11 sensor and LPC2148 microcontroller. It alerts users via buzzer when thresholds are exceeded, logs data, and uploads values to ThingSpeak. Setpoints are stored in EEPROM and can be updated locally via keypad or remotely via the cloud.
 
-HARDWRAE REQUIREMENTS:
+⚙️ HARDWRAE REQUIREMENTS:
 1) LPC2148
 2) DHT11
 3) AT24C256
