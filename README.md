@@ -25,51 +25,6 @@ This IoT-based data logger monitors temperature and humidity using a DHT11 senso
 * Remote configuration via cloud and local keypad
 * Interrupt-driven user input system
 
-🧩 System Architecture:
-+------------------------+
-|      User / Admin      |
-|  - Local Keypad Input  |
-|  - Cloud (ThingSpeak)  |
-+----------+-------------+
-           |
-           v
-+------------------------+            +------------------------------+
-|      Setpoint Input    |<---------> | ThingSpeak Cloud Platform    |
-| (via Keypad or Cloud)  |            | - Field1: Temp Setpoint      |
-|                        |            | - Field2: Humidity Setpoint  |
-+------------------------+            | - Field3: Temp Data          |
-                                      | - Field4: Humidity Data      |
-                                      +------------------------------+
-                                               ^
-                                               |
-                                               v
-+-------------------------------------------------------------+
-|                       LPC2148 Microcontroller               |
-|                                                             |
-| +---------------------+     +-----------------------------+ |
-| |  EEPROM (AT24C256)  |<--> | Store Setpoints Persistently| |
-| +---------------------+     +-----------------------------+ |
-|                                                             |
-| +--------------------+     +-----------------------------+  |
-| |    Keypad + SW     | --> | Local Setpoint Entry (ISR)  |  |
-| +--------------------+     +-----------------------------+  |
-|                                                             |
-| +---------------------+     +----------------------------+  |
-| |   DHT11 Sensor       | -->| Read Temp & Humidity       |  |
-| +---------------------+     +----------------------------+  |
-|                                                             |
-| +-------------------+       +----------------------------+  |
-| | Threshold Logic   |<----->| EEPROM & Cloud Setpoints   |  |
-| +-------------------+       +----------------------------+  |
-|       |     |                                               |
-|       v     v                                               |
-|  LCD Display  Buzzer (ON/OFF if threshold crossed)          |
-|                                                             |
-| +---------------------+                                     |
-| |      ESP01 Wi-Fi     | --> Send Violations to Cloud       |
-| +---------------------+ --> Fetch Setpoints (every 3-5 min) |
-+-------------------------------------------------------------+
-
 🔁 Working principle:
   The system initializes all peripherals (LCD, DHT11, EEPROM, ESP01, keypad, and buzzer).
 * Setpoints are read from EEPROM during startup.
