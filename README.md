@@ -2,21 +2,20 @@
 This IoT-based data logger monitors temperature and humidity using a DHT11 sensor and LPC2148 microcontroller. It alerts users via buzzer when thresholds are exceeded, logs data, and uploads values to ThingSpeak. Setpoints are stored in EEPROM and can be updated locally via keypad or remotely via the cloud.
 
 ⚙️ HARDWRAE REQUIREMENTS:
-1) LPC2148
-2) DHT11
-3) AT24C256
-4) 4x4 MATRIX KEYPAD
-5) SWITCH
-6) LCD
-7) BUZZER
-8) WI-FI MODULE (ESP01)
-9) DB-9 CABLE/USB-UART CONVERTER
+1) LPC2148 : The main controller for the project.
+2) DHT11 :  For reading temperature and humidity data.
+3) AT24C256 : For storing and retrieving the set points for temperature and humidity.
+4) 4x4 MATRIX KEYPAD : To allow user input for changing set points.
+5) SWITCH : For triggering interrupt-based changes in set points.
+6) LCD : To display data from sensors and system status.
+7) BUZZER : For alerting when threshold violations occur.
+8) WI-FI MODULE (ESP01): To send data to the Thingspeak cloud for remote monitoring.
+9) DB-9 CABLE/USB-UART CONVERTER : To interface with UART for communication.
 
 💾 SOFTWARE REQUIREMENTS:
-1) KEIL C Compiler
-2) PROGRAMMING IN EMBEDDED C
-3) Flash Magic
-4) 
+1) KEIL C Compiler : For embedded C programming.
+2) PROGRAMMING IN EMBEDDED C :The primary programming language for LPC2148.
+3) Flash Magic:To load the program onto the LPC2148.
     
 🔑 KEY FEATURES:
 * Real-time environmental monitoring
