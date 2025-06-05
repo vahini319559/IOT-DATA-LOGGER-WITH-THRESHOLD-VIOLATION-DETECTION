@@ -16,6 +16,7 @@ This IoT-based data logger monitors temperature and humidity using a DHT11 senso
 1) KEIL C Compiler
 2) PROGRAMMING IN EMBEDDED C
 3) Flash Magic
+4) 
     
 🔑 Key Features:
 * Real-time environmental monitoring
@@ -25,10 +26,9 @@ This IoT-based data logger monitors temperature and humidity using a DHT11 senso
 * Remote configuration via cloud and local keypad
 * Interrupt-driven user input system
 
----------------*
-*              |
-*              | 
---------------*
+🏗️ System Architecture:
+![image](https://github.com/user-attachments/assets/08e16129-942f-4b82-ba00-1c43426eb68c)
+
 🔁 Working principle:
   The system initializes all peripherals (LCD, DHT11, EEPROM, ESP01, keypad, and buzzer).
 * Setpoints are read from EEPROM during startup.
