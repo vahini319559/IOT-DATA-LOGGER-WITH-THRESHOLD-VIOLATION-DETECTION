@@ -16,17 +16,17 @@ This IoT-based data logger monitors temperature and humidity using a DHT11 senso
 1) KEIL C Compiler : For embedded C programming.
 2) PROGRAMMING IN EMBEDDED C :The primary programming language for LPC2148.
 3) Flash Magic:To load the program onto the LPC2148.
-    
+
+🏗️ SYSTEM ARCHITECTURE:
+![image](https://github.com/user-attachments/assets/cf9be17f-2c78-44c6-9b68-c71c45c0752d)
+
 🔑 KEY FEATURES:
 * Real-time environmental monitoring
 * EEPROM-based persistent storage of threshold values
 * Alerts using buzzer on threshold violation
 * Cloud integration with Thingspeak for data logging
 * Remote configuration via cloud and local keypad
-
-🏗️ SYSTEM ARCHITECTURE:
-![image](https://github.com/user-attachments/assets/cf9be17f-2c78-44c6-9b68-c71c45c0752d)
-
+  
 🔁 WORKING PRINCIPLE:
   The system initializes all peripherals (LCD, DHT11, EEPROM, ESP01, keypad, and buzzer).
 * Setpoints are read from EEPROM during startup.
