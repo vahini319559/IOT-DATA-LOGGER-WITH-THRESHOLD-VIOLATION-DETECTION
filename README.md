@@ -30,8 +30,8 @@ This IoT-based data logger monitors temperature and humidity using a DHT11 senso
 * Setpoints are read from EEPROM during startup.
 * The DHT11 sensor continuously measures temperature and humidity.
 * These values are compared with the setpoints, and if a threshold is violated:
-       The current value is sent to the Thingspeak cloud.
-       The buzzer is activated with timed ON/OFF cycles to alert nearby personnel.
+       -> The current value is sent to the Thingspeak cloud.
+       -> The buzzer is activated with timed ON/OFF cycles to alert nearby personnel.
 * Every 3 to 5 minutes, the system fetches the latest setpoints from the Thingspeak cloud.
 * If the new setpoint differs from the current EEPROM value, the EEPROM is updated.
 * If a local interrupt is triggered, the user can manually update setpoints using the keypad.
