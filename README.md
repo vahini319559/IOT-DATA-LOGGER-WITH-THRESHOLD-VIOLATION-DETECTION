@@ -26,7 +26,7 @@ Key Features:
 * Interrupt-driven user input system 
 
 Working principle:
-The system initializes all peripherals (LCD, DHT11, EEPROM, ESP01, keypad, and buzzer).
+  The system initializes all peripherals (LCD, DHT11, EEPROM, ESP01, keypad, and buzzer).
 * Setpoints are read from EEPROM during startup.
 * The DHT11 sensor continuously measures temperature and humidity.
 * These values are compared with the setpoints, and if a threshold is violated:
