@@ -26,8 +26,7 @@ This IoT-based data logger monitors temperature and humidity using a DHT11 senso
 * Remote configuration via cloud and local keypad
 
 🏗️ SYSTEM ARCHITECTURE:
-![image](https://github.com/user-attachments/assets/1e87a544-a785-4994-8fde-678fbaca284c)
-
+![image](https://github.com/user-attachments/assets/cf9be17f-2c78-44c6-9b68-c71c45c0752d)
 
 🔁 WORKING PRINCIPLE:
   The system initializes all peripherals (LCD, DHT11, EEPROM, ESP01, keypad, and buzzer).
