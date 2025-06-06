@@ -18,7 +18,7 @@ This IoT-based data logger monitors temperature and humidity using a DHT11 senso
 3) Flash Magic:To load the program onto the LPC2148.
 
 🏗️ SYSTEM ARCHITECTURE:
-![image](https://github.com/user-attachments/assets/cf9be17f-2c78-44c6-9b68-c71c45c0752d)
+![image](https://github.com/user-attachments/assets/8a17a631-8e80-4e89-94d2-5c758510e1ea)
 
 🔑 KEY FEATURES:
 * Real-time environmental monitoring
